@@ -73,6 +73,7 @@ function renderMovies(movieArray, wrapper) {
         templateDiv.querySelector('.card-img-top').src = movie.imageLink;
         templateDiv.querySelector('.card-title').textContent = movie.title;
         templateDiv.querySelector('.card-year').textContent = movie.year;
+        templateDiv.querySelector('.card-category').textContent = movie.category.split('|').join(', ');
         templateDiv.querySelector('.card-rate').textContent = movie.rating;
         templateDiv.querySelector('.card-link').href = movie.youtubeLink;
 
